@@ -1,0 +1,5 @@
+polkit.addRule(function(action, subject) {
+    if (action.id == "com.nymvpn.vpnd.unix-access") {
+        return polkit.Result.YES;
+    }
+});

@@ -14,7 +14,7 @@ The simplest way to get started is using this `docker-compose.yml`:
 ```yaml
 services:
   nymvpn-socks-proxy:
-    image: todo
+    image: ghcr.io/skyracer2012/nymvpn-socks5-secure-proxy:v1.0.0
     container_name: nymvpn-socks-proxy
     cap_add:
       - NET_ADMIN

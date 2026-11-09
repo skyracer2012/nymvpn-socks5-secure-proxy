@@ -13,11 +13,11 @@ RUN apt-get update \
 
 RUN mkdir -p /run/dbus
 
-ARG NYM_VPND_URL="https://github.com/nymtech/nym-vpn-client/releases/download/nym-vpn-v2026.11.1/nym-vpnd_2026.11.1_amd64.deb"
-ARG NYM_VPND_SHA256="5d8b5e5d36a5de6eeef03e62abb8c88951a21d0755bc2ac76cf72c786ea8b8a1"
+ARG NYM_VPND_URL="https://github.com/nymtech/nym-vpn-client/releases/download/nym-vpn-v2026.15.0/nym-vpnd_2026.15.0_amd64.deb"
+ARG NYM_VPND_SHA256="15cf20f7617cef8ae8bcf2dbdd036c476a6d9309472883de276f2bdbd48621f3"
 
-ARG NYM_VPNC_URL="https://github.com/nymtech/nym-vpn-client/releases/download/nym-vpn-v2026.11.1/nym-vpnc_2026.11.1_amd64.deb"
-ARG NYM_VPNC_SHA256="7f1c37438832e5c19c0780487e2e6132884e977a23606199b825e43b1df38423"
+ARG NYM_VPNC_URL="https://github.com/nymtech/nym-vpn-client/releases/download/nym-vpn-v2026.15.0/nym-vpnc_2026.15.0_amd64.deb"
+ARG NYM_VPNC_SHA256="acf6f1da2503d024e81ea48b7b1f6e1ab00b3a5edb5aa494cac60be0827656e5"
 
 ADD --checksum=sha256:${NYM_VPND_SHA256} \
     ${NYM_VPND_URL} \
